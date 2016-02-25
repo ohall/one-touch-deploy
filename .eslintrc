@@ -1,0 +1,24 @@
+{
+  "env": {
+    "node": true
+  },
+  "ecmaFeatures": {
+    "arrowFunctions": true
+  },
+  "rules": {
+    "strict": 0,
+    "quotes": [2, "single"],
+    "eol-last": [0],
+    "no-mixed-requires": [0],
+    "no-underscore-dangle": [0],
+    "no-multiple-empty-lines": [2],
+    "brace-style": [2, "1tbs", { "allowSingleLine": true }],
+    "max-len": [2, 100],
+    "indent": [2,2],
+    "space-before-blocks": [2, "always"]
+  },
+
+  "globals": {
+    "process": true
+  }
+}

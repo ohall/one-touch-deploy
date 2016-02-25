@@ -1,0 +1,39 @@
+{
+  "name": "one-touch-deploy",
+  "version": "0.0.1",
+  "description": "Touch components and deploy an environment in OneOps",
+  "bin": {
+    "one-touch-deploy": "cli.js"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "eslint . && npm run mocha"
+  },
+  "scripts": {
+    "test": "eslint . && npm run mocha",
+    "prepublish": "npm run test",
+    "mocha": "./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohall/one-touch-deploy.git"
+  },
+  "keywords": [
+    "OneOps",
+    "DevOps"
+  ],
+  "author": "Oakley Hall <ohall@grtmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ohall/one-touch-deploy/issues"
+  },
+  "homepage": "https://github.com/ohall/one-touch-deploy#readme",
+  "dependencies": {
+    "cli": "^0.11.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^1.10.3",
+    "mocha": "^2.4.5"
+  }
+}
