@@ -1,8 +1,12 @@
 #!/usr/bin/env node
-var cli = require('cli'),
-  ips = require('./index');
+'use strict';
 
-var error = function error(e) {
+const cli = require('cli');
+const odt = require('./lib/otd');
+
+const error = function error(e) {
   if(e) { console.log( e ); }
   process.exit();
 };
+
+cli.main((args, options) => { odt(); });
