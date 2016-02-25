@@ -1,1 +1,1 @@
-module.exports = require('./lib/otd');
+module.exports = require('./lib/otd')();
