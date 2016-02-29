@@ -29,7 +29,7 @@ cli.main((args, options) => {
     ooAssembly : options.ooAssembly,
     ooEnvironment : options.ooEnvironment,
     ooPlatform : options.ooPlatform,
-    ooComponents : options.ooComponents.split(','),
+    ooComponents : options.ooComponents?options.ooComponents.split(','):null,
     ooDoDeploy : (options.ooDoDeploy === 'true')
   },(result) => { console.log( result ); });
 });
