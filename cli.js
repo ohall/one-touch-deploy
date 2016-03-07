@@ -5,10 +5,9 @@ const cli = require('cli');
 const otd = require('./lib/otd');
 
 const error = function error(e) {
-  if(e) { console.log( e ); }
+  if(e) { console.error( e ); }
   process.exit();
 };
-
 
 cli.parse({
   ooHost: [ 'h', 'Hostname', 'string' ],
